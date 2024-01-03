@@ -1,5 +1,23 @@
 import java.util.*;
 
+class Point{
+    private int x;
+    private int y;
+
+    public Point(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX(){
+        return this.x;
+    }
+
+    public int getY(){
+        return this.y;
+    }
+}
+
 class Main{
     public static void main(String[] args){
         //사용자 입력 및 변수 선언
@@ -64,23 +82,5 @@ class Main{
         System.out.println(max);
 
         scan.close();
-    }
-}
-
-class Point{
-    private int x;
-    private int y;
-
-    public Point(int x, int y){
-        this.x = x;
-        this.y = y;
-    }
-
-    public int getX(){
-        return this.x;
-    }
-
-    public int getY(){
-        return this.y;
     }
 }
