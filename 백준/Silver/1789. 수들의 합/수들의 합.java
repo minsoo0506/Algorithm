@@ -13,7 +13,7 @@ class Main{
         for(int i = 1; i <= S; i++){
             sum += i;
             if (sum > S) break;
-            count++;
+            else count++;
         }
 
         System.out.println(count);
