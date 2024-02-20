@@ -45,7 +45,7 @@ public class Main {
                 distance[i] = Math.min(distance[i], distance[i-1] + 1);
             }
             for(Point next : shortcut[i]){
-                if(next.v <= D && distance[next.v] > distance[i] + next.cost){
+                if(distance[next.v] > distance[i] + next.cost){
                     distance[next.v] = distance[i] + next.cost;
                 }
             }
