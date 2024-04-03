@@ -30,7 +30,7 @@ public class Main {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(start);
 
-        // BFS
+        // BFS (분리 집합(arrayList에 저장) 만들기)
         while(!queue.isEmpty()){
             int now = queue.poll();
 
